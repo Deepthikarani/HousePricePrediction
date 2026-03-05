@@ -1,109 +1,123 @@
-Project Overview :
+## 🏠 House Price Prediction using Machine Learning
 
-This project implements an end-to-end Machine Learning regression pipeline to predict house prices using the Boston Housing dataset.
-The goal is to understand how different features such as crime rate,number of rooms,accessibility,and tax rates influence house prices and to build a predictive model with strong generalization performance.
-The entire workflow is implemented in Jupyter Notebook,following industry-standard ML practices.
+This project implements an end-to-end Machine Learning regression pipeline to predict house prices using the Boston Housing Dataset.
+The goal is to analyze how different housing features such as crime rate, number of rooms, accessibility, and tax rates influence house prices and to build a regression model capable of predicting the median value of owner-occupied homes.
+The entire workflow is implemented in Jupyter Notebook following a structured Machine Learning pipeline including data analysis, preprocessing, model training, and evaluation.
 
+## 🎯 Problem Statement
 
-Problem Statement :
+Predicting house prices accurately is a classic supervised learning regression problem with important real-world applications such as:
+- Real estate price estimation
+- Urban development planning
+- Property investment analysis
+- Market trend forecasting
+The objective of this project is to train a regression model that predicts house prices based on multiple numerical housing features.
 
-Predicting house prices accurately is a classic supervised learning problem with real-world applications in :
--> Real estate valuation
--> Urban planning
--> Investment decision-making
-The objective is to train a regression model that predicts the median value of owner-occupied homes based on multiple numerical features.
+## 📊 Dataset Description
 
+- Dataset Name: Boston Housing Dataset
+- Dataset File: boston.csv
+- Target Variable: MEDV (Median value of owner-occupied homes)
 
-Dataset Description :
+## Key Features
+| Feature  | Description                                   |
+| :--------| :---------------------------------------------|
+| CRIM     | Crime rate per town                           |
+| RM       | Average number of rooms per dwelling          |
+| LSTAT    | Percentage of lower status population         |
+| NOX      | Nitric oxide concentration                    |
+| TAX      | Property tax rate                             |
+| PTRATIO  | Pupil–teacher ratio                           |
+| DIS      | Distance to employment centers                |
 
--> Dataset Name : Boston Housing Dataset
--> File : boston.csv
--> Target Variable : MEDV(Median value of homes)
+## Tech Stack
+| Category                |  Tools Used                                 |
+| :-----------------------| :-------------------------------------------|
+| Programming Language    |  Python                                     |
+| Environment             |  Jupyter Notebook                           |
+| Data Processing         |  Pandas, NumPy                              |
+| Visualization           |  Matplotlib, Seaborn                        |
+| Machine Learning        |  Scikit-learn, XGBoost                      |
 
+## ⚙️ Machine Learning Workflow
+The project follows a structured ML development pipeline:
 
-Key Features:
+1️⃣ Data Loading & Understanding
+- Loaded dataset from CSV file
+- Inspected dataset structure and shape
+- Checked for missing values
 
-Features   ->   Description
-1.CRIM     ->   Crime rate per town
-2.RM       ->   Average number of rooms per dwelling
-3.LSTAT    ->   %lower status of the population
-4.NOX      ->   Nitric oxide concentration
-5.TAX      ->   Property tax rate
-6.PIRATIO  ->   Pupil-teacher ratio
-7.DIS      ->   Distance to employment centers
+2️⃣ Exploratory Data Analysis (EDA)
+- Distribution analysis of numerical features
+- Correlation heatmap to understand relationships
+- Identification of influential features affecting house prices
 
+3️⃣ Data Processing
+- Feature selection
+- Train–test split for model validation
 
-Tech Stack :
+4️⃣ Model Building
+- Implemented XGBRegressor for regression modelling
 
--> Programming Language: Python
--> Environment : Jupyter Notebook
--> Libraries:
-      -> Numpy
-      -> Pandas
-      -> Matplotlib
-      -> Seaborn
-      -> Scikit-learn
+5️⃣ Model Evaluation
+Model performance was evaluated using:
+- R² Score
+- Mean Squared Error (MSE)
 
-Machine Learning Workflow :
+6️⃣ Model Interpretation
+- Feature impact analysis
+- Error analysis
+- Understanding bias–variance tradeoff
 
-This project follows a structured ML pipeline:
-1.Data Loading & Understanding
-  -> Loaded dataset from CSV
-  -> Checked shape
-  -> Verified missing values
-2.Exploratory Data Analysis(EDA)
-  -> Distribution analysis of features
-  -> Correlation heatmap
-  -> Identification of influential features
-3.Data Processing
-  -> Train-test-split
-4.Model Building
-  -> XGBRegressor
-5.Model Evaluation
- -> R2 Score
- -> Mean Squared Error(MSE)
-6.Model Interpretation
- -> Feature impact analysis
- -> Error analysis
- -> Bias-variance understandin
+## 📈 Results & Performance
+The trained regression model demonstrated strong predictive capability on unseen test data.
+The evaluation metrics confirmed that the model successfully captures the relationships between housing features and property prices.
 
+## 📚 Key Learnings
+Through this project, the following concepts were explored:
+- Importance of Exploratory Data Analysis (EDA)
+- Understanding feature relationships and correlations
+- Impact of multicollinearity in regression models
+- Interpreting regression metrics such as R² Score and MSE
+- Implementing a structured machine learning workflow
 
-Results & Performance :
-
-The regression model achieved strong predictive performance on unseen test data.
-
-Key Learnings :
-
--> Importance of EDA before modelling
--> How multicollinearity affects regression
--> Role of feature scaling in linear models
--> Interpreting regression metrics in real-world terms
-
-Project Structure :
-
-House_Price_Prediction/
+## 📂 Project Structure
+```
+House_Price_Prediction
 |
-|--- House_Price_Prediction.ipynb
-|--- boston.csv
-|--- README.md
+|---House_Price_Prediction.ipynb
+|   Main notebook containing the full ML pipeline
+|
+|---boston.csv
+|   Dataset used for training the model
+|
+|---README.md
+    Project documentation
+```
 
+## ▶️ How to Run the Project
+1️⃣ Clone the repository
+git clone https://github.com/your-username/House_Price_Prediction.git
 
-How to Run the Project :
+2️⃣ Navigate to the project directory
+cd House_Price_Prediction
 
-1. Clone the repository
-   git clone https://github.com/your-username/House_Price_Prediction.git
-2. Navigate to the project directory
-   cd House_Price_Prediction
-3.Open Jupyter Notebook
-  jupyter notebook
-4.Run House_Price_Prediction.ipynb
+3️⃣ Launch Jupyter Notebook
+jupyter notebook
 
+4️⃣ Open and run
+House_Price_Prediction.ipynb
 
-Future Improvements :
+## 🚀 Future Improvements
+Potential enhancements for this project include:
+- Hyperparameter tuning using GridSearchCV
+- Feature engineering for non-linear relationships
+- Model comparison with multiple regression algorithms
+- Deploying the trained model using Flask / FastAPI
+- Building an interactive Streamlit dashboard
 
--> Hyperparameter tuning using GridSearchCV
--> Feature engineering for non-linear relationships
--> Deploy model using Flask or FastAPI
+## 👩‍💻 Author
+Deepthikarani Pokali
 
-
-  
+GitHub:
+https://github.com/Deepthikarani
